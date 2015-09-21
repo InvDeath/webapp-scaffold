@@ -1,0 +1,7 @@
+web:
+  restart: always
+  build: ./web
+  expose:
+    - 8000
+  command: >
+    uwsgi --http :8000 --module app.wsgi

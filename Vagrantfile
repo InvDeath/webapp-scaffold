@@ -16,7 +16,7 @@ $script = <<SCRIPT
   cd 76b450a0c986e576e98b
   sudo mv docker-cleanup /usr/local/bin/docker-cleanup
   sudo chmod +x /usr/local/bin/docker-cleanup
-  
+  usermod -aG docker vagrant
   gem install tmuxinator
 SCRIPT
 
