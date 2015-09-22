@@ -29,6 +29,10 @@ root: ~/share
 
 windows:
   - editor:
-      layout: tailed
+      layout: 00df,229x62,0,0[230x25,0,0{114x25,0,0,0,115x25,115,0,2},230x25,0,26{114x25,0,26,4,115x25,115,26,1},230x10,0,52,3]
       panes:
+        - vim docker-compose.yml
+        - docker-compose logs
+        - vim tmuxinator.yml
+        - make billd && make run
         - git status

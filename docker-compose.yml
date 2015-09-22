@@ -5,3 +5,12 @@ web:
     - 8000
   command: >
     uwsgi --http :8000 --module app.wsgi
+
+nginx:
+  restart: always
+  build: ./nginx
+  ports:
+    - "80:80"
+  links:
+    - web:web
+

@@ -11,4 +11,8 @@ tmux:
 	mux start $(PROJECTNAME)
 
 build:
-	sudo docker-compose build
+	docker-compose build
+
+run:
+	docker-compose up -d
+
